@@ -133,21 +133,25 @@ const editionDnaPrefix = 0
 // create required weights
 // for each weight, call 'addRarity' with the id and from which to which element this rarity should be applied
 let rarityWeights = [
-  addRarity('super_rare', 1, 1),
-  addRarity('rare', 2, 5),
-  addRarity('original', 5, 10)
+  addRarity('Legendary', 1, 1),
+  addRarity('Rare', 2, 5),
+  addRarity('Uncommon', 5, 10),
+  addRarity('Common', 5, 10)
 ];
 
 // create required layers
 // for each layer, call 'addLayer' with the id and optionally the positioning and size
 // the id would be the name of the folder in your input directory, e.g. 'ball' for ./input/ball
 const layers = [
-  addLayer('ball', { x: 0, y: 0 }, { width: width, height: height }),
-  addLayer('eye color'),
-  addLayer('iris'),
-  addLayer('shine'),
-  addLayer('bottom lid'),
-  addLayer('top lid')
+  addLayer('base', { x: 0, y: 0 }, { width: width, height: height }),
+  addLayer('tattoo'),
+  addLayer('clothes'),
+  addLayer('armor'),
+  addLayer('belt'),
+  addLayer('Mouth'),
+  addLayer('helmet'),
+  addLayer('Lweapon'),
+  addLayer('Rweapon')
 ];
 
 // provide any specific percentages that are required for a given layer and rarity level
